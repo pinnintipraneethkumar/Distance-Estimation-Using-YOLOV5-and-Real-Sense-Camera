@@ -7,18 +7,18 @@ The aim of this project is to develop a system for food object detection and dis
 
 ### Config_files : 
 
-The config_files folder contains the classes1.txt file. you can edit the classes1.txt file to  your own custom classes or create a new classes.txt file and you can download our [trained model best.onnx file](https://drive.google.com/file/d/1GdW4rMaqCUFyjkiP_yno7nKXrJYHQjej/view?usp=sharing)
+The config_files folder contains the classes1.txt file. you can edit the classes1.txt file to create your own custom classes or create a new classes.txt file and you can download our [trained model best.onnx file](https://drive.google.com/file/d/1GdW4rMaqCUFyjkiP_yno7nKXrJYHQjej/view?usp=sharing)
 
 ### python : 
 
-The Python folder contains the two .py files. realsense_camera.py file contains the code required to access the real-sense camera and get the real and depth image frames. The frames are fed into trained model (best.onnx) in yolo.py file.
+The Python folder contains the two .py files. realsense_camera.py file contains the code required to access the real-sense camera and get the real and depth image frames. The frames are fed into the trained model (best.onnx) in yolo.py file.
 
 
 ## Usage : 
 1. Git clone this repository.
 
    '''
-   git clone
+   git clone https://github.com/pinnintipraneethkumar/Food-Object-Detection-and-Distance-Estimation-Using-YOLOV5-and-Real-Sense-Camera.git
    '''
 3. Install real- sense camera library.
    '''
@@ -30,6 +30,9 @@ The Python folder contains the two .py files. realsense_camera.py file contains 
 
 ## Demo : 
 
-https://github.com/pinnintipraneethkumar/Food-Object-Detection-and-Distance-Estimation-Using-YOLOV5-and-Real-Sense-Camera/assets/76033282/0d096e5f-dfee-4503-afb3-4424da33cb71
+https://github.com/pinnintipraneethkumar/Food-Object-Detection-and-Distance-Estimation-Using-YOLOV5-and-Real-Sense-Camera/assets/76033282/bf1982a7-7c34-42d1-8f69-84ca1b65f979
+
+
+
 
 
