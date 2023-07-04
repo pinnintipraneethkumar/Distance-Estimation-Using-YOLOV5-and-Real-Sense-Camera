@@ -19,9 +19,9 @@ The Python folder contains the two .py files. realsense_camera.py file contains 
 
 
 3. Install real- sense camera library.
-   '''
+   
    `pip install pyrealsense2`
-   '''
+   
 
 4. Run :''' your path/python/yolo.py''' in the command prompt to find the object and the distance.
 
