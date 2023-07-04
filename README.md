@@ -15,11 +15,9 @@ The Python folder contains the two .py files. realsense_camera.py file contains 
 
 
 ## Usage : 
-1. Git clone this repository.
+1.  Clone this repository.
 
-   '''
-   git clone https://github.com/pinnintipraneethkumar/Food-Object-Detection-and-Distance-Estimation-Using-YOLOV5-and-Real-Sense-Camera.git
-   '''
+
 3. Install real- sense camera library.
    '''
    pip install pyrealsense2
