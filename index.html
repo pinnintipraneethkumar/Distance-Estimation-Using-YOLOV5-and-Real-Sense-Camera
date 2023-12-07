@@ -1,0 +1,57 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Operations</title>
+</head>
+<body>
+    <h1>YOLO Operations</h1>
+    
+    <!-- Form to choose between Detection and Segmentation -->
+    <form action="/" method="post">
+        <label for="task_type">Select Task Type:</label>
+        <select id="task_type" name="task_type">
+            <option value="detect">Object Detection</option>
+            <option value="segment">Segmentation</option>
+        </select>
+        <br>
+        <input type="submit" value="Next">
+    </form>
+
+    {% if task_type %}
+        <!-- Form for Object Detection -->
+        {% if task_type == "detect" %}
+            <form action="/detect" method="post">
+                <!-- Add a select field for choosing the YOLO model -->
+                <label for="model">Select YOLO Model:</label>
+                <select id="model" name="model">
+                    <option value="yolov5s">YOLOv5s</option>
+                    <!-- Add more YOLO model options if needed -->
+                </select>
+                
+                <label for="operation">Select Operation:</label>
+                <select id="operation" name="operation">
+                    <option value="train">Train</option>
+                    <option value="infer">Inference</option>
+                </select>
+                <br>
+                <!-- Add more fields for training or inference parameters based on the selected operation -->
+                <input type="text" id="data_path" name="data_path" placeholder="Data Path" required>
+                <input type="text" id="weights" name="weights" placeholder="Weights (optional)">
+                <input type="number" id="epochs" name="epochs" placeholder="Epochs (for training)">
+                <input type="number" id="confidence" name="confidence" placeholder="Confidence (for inference)">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        {% endif %}
+        
+        <!-- Form for Segmentation (Under construction) -->
+        {% if task_type == "segment" %}
+            <p>Segmentation is currently under construction.</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
